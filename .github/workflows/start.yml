@@ -1,0 +1,10 @@
+name: getting-started
+
+on [push]:
+
+jobs:
+  firstjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: firststep
+        run: echo "first step has been triggered"
