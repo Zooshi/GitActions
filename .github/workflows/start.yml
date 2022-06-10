@@ -16,7 +16,7 @@ jobs:
           python-version: 3.8 #install the python needed
       - name: execute_my_py_script # run the run.py to get the latest data
         run: |
-          getting_started.py
+          python getting_started.py
       - name: listdata_in_repo
         run: |
           pwd
