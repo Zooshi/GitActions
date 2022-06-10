@@ -1,6 +1,6 @@
 name: getting-started
 
-on [push]:
+on: [push]
 
 jobs:
   firstjob:
