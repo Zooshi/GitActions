@@ -1,13 +1,14 @@
 name: getting-started
 
 on: [push]
-
+env:
+  Daniel: Weikert
 jobs:
   firstjob:
     runs-on: ubuntu-latest
     steps:
       - name: firststep
-        run: echo "first step has been triggered"
+        run: echo $Daniel
       - name: readrepodata
         uses: actions/checkout@v2
       - name: use-python
