@@ -5,7 +5,7 @@ env:
   Daniel: Weikert
 jobs:
   firstjob:
-    runs-on: ubuntu-latest
+    runs-on: [ubuntu-latest, windows-latest]
     steps:
       - name: firststep
         run: |
