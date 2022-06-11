@@ -10,15 +10,15 @@ jobs:
       - name: firststep
         run: |
           echo $Daniel
-          echo ${{DanielsSecret}}
+          echo ${{secrets.DanielsSecret}}
       - name: readrepodata
         uses: actions/checkout@v2
       - name: use-python
         uses: actions/setup-python@v2
         with:
           python-version: 3.8 #install the python needed
-      - name: install_dependencies
-        run: pip install -r requirements.txt
+      # - name: install_dependencies
+      #   run: pip install -r requirements.txt
       - name: execute_my_py_script # run the run.py to get the latest data
         run: |
           python getting_started.py
