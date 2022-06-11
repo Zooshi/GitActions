@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: firststep
-        run: echo $Daniel
+        run: |
+          echo $Daniel
+          echo ${{DanielsSecret}}
       - name: readrepodata
         uses: actions/checkout@v2
       - name: use-python
